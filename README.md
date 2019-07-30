@@ -197,6 +197,20 @@ else:
 finally: #will run every time
 ```
 
+### Unit Testing
+```
+import unittest
+
+class Test(unittest.TestCase):
+
+	bot1 = FunctionToTest(input)
+
+	def test_function(self):
+		self.assertEqual(self.bot1, None)
+
+if __name__ == "__main__":
+	unittest.main()
+```
 ### Random things to remember
 - use set() to establish uniqueness
 - can cast list(set()) to convert to list
